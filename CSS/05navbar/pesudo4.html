@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hover over me </title>
+    <style>
+        a {
+            position:relative;
+            text-decoration: none;
+            color: rgb(125, 4, 4);
+        }
+        a:after {
+            content:"";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left:0;
+            color: rgb(60, 196, 206);
+            background-color: #050b41;
+            transform: scaleX(0);
+            transition: 0.3s ease-in-out;
+        }
+        a:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Hover Over ME</a>
+</body>
+</html>
