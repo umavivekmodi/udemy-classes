@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip effect</title>
+    <style>
+        button{
+            position: relative;
+            justify-content: center;
+        }
+        button:hover::after{
+            content:"click me to submit!";
+            position: absolute;
+            font-size: x-small;
+            top:-3px;
+            left:70px;
+            background-color: rgb(247, 222, 0);
+            color: rgb(193, 12, 12);
+            padding: 2px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <button>Hover me </button>
+</body>
+</html>
