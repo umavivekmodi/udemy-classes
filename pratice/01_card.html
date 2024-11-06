@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile details</title>
+   <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #bfbfc8;
+    }
+    .profile-container{
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+        border-radius: 24px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 5px 10px;
+    }
+    .profile-container::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-radius:24px 24px 0 0 ;
+        height:36%;
+        width: 100%;
+        background-color: blue;
+    }
+    .profile-picture{
+        position: relative;
+        /* height: 140px;
+        width: 140px; */
+        border-radius: 50%;
+        /* background-color: #7070f9; */
+        padding: 3px;
+    }
+    .profile-picture .profile-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    .profile-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-detaild .profile-name{
+        font-size: 23px;
+        font-weight: 500px;
+        margin-top: 20px;
+    }
+    .profile-details .profile-status{
+        margin:5px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+    .social-icons{
+        display: flex;
+        align-items: center;
+        margin-top:25px;
+    }
+    .social-icons .social-icons{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #36acfc;
+        border-radius: 25%;
+        height :34px;
+        width:34px;
+        margin: 0 7px;
+        text-decoration: none;
+        font-size:18px;
+    }
+    .action-buttons{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .action-buttons .action-buttons{
+        background-color: #0b6ebf;
+        padding: 12px;
+        margin: 0 18px ;
+        color: white ;
+        border-radius:25px ;
+        font-weight: 400px;
+        font-size:14px ;
+        border: none;
+        cursor :pointer;
+        transition:all 0.3s ease ;   
+    }
+    .action-buttons .action-buttons:hover{
+        background-color: #084678;
+    }
+    .analytics{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top:20px ;
+    }
+    .analytics .data{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .analytics .data i{
+        font-size: 24px;
+        color: #1a89de;
+    }
+    .analytics .data .num{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+   </style>
+</head>
+<link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img   src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"  alt="profile-picture" class="profile-image">
+        </div>
+        <div class="profile-details">
+            <span class="Profile Name">krishana shyama mukharjee</span>
+            <span class="Profile Status">web-developer</span>
+            <div class="social-icons">
+                <a href="#" class="social-icon" style="background: 4267b2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" style="background: 1da1f2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" style="background: f46997"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" style="background: 0b3c9e"><i class="fab fa-linkdin"></i></a>
+        </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-button">feedback</button>
+            <button class="action-button">Massage</button>
+        </div>
+
+
+        <div class="analytics">
+            <div class="data">
+                <i class="bx bx-heart"></i>
+                <span class="num">50k</span>
+            </div>
+
+            <div class="data">
+                <i class="bx bx-massage-rounded"></i>
+                <span class="num">14k</span>
+            </div>
+
+            <div class="data">
+                <i class="bx bx-share"></i>
+                <span class="num">21k</span>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
